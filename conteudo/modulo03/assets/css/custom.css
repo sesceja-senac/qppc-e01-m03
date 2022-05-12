@@ -1,0 +1,88 @@
+p.icone{
+    padding-left: 50px;
+}
+
+
+.tabela-interativa{
+    border: 2px solid;
+    padding: 10px;
+    background-color: #242222;
+    color: white;
+    display: block;
+    border-radius: 10px;
+    width: 625px;
+    transition: 300ms;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.tabela-interativa.fechada{
+    width: 300px;
+}
+.tabela-interativa.fechada #tabela01 th{
+     text-align: left;
+     text-indent: 12%;
+     transition: 200ms;
+}
+
+.tabela-interativa #tabela01{
+
+    width: 600px;
+}
+.tabela-interativa #tabela01 th{
+    text-align: center;
+    padding: 10px;
+}
+
+.tabela-interativa #tabela01 td{
+    padding: 10px;
+}
+
+.tabela-interativa #tabela01 th:nth-child(1){
+    background-color: rgb(10, 10, 10);
+}
+
+.tabela-interativa .bg-escuro{
+    background-color: rgb(15, 14, 14);
+}
+.tabela-interativa td span.rotate{
+    writing-mode: vertical-lr;
+    -ms-writing-mode: tb-rl;
+    transform: rotate(180deg);
+}
+.tabela-interativa .bl-cyan{
+    border-left: 2px solid cyan;
+}
+.tabela-interativa i{
+    margin-right: 20px;
+}
+.tabela-interativa .text-cyan{
+    color: cyan;
+    font-weight: bold;
+}
+.tabela-interativa .text-yellow{
+    color: yellow;
+    font-weight: bold;
+}
+
+.tabela-interativa i.big{
+    margin:0;
+    font-size: 3rem;
+    color: cyan;
+}
+.tabela-interativa i.big.white{
+    color: white;
+    font-size: 2rem;
+}
+
+
+ol.romana{
+    list-style-type:upper-roman;
+}
+
+marker{
+    background-color: yellow;
+    padding: 5px;
+}
