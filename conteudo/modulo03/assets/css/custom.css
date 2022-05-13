@@ -144,3 +144,14 @@ marker{
     -ms-writing-mode: tb-rl;
     transform: rotate(180deg);
 }
+
+.citacao {
+    background-color: #113f58;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 10vw;
+    padding-left: 2vw;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
