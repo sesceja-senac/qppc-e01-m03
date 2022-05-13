@@ -86,3 +86,61 @@ marker{
     background-color: yellow;
     padding: 5px;
 }
+.tabela-quadro1{
+    width: 100%;
+}
+
+.tabela-quadro1 p{
+    margin: 0;
+    text-align: center;
+}
+.tabela-quadro1 .cor-azul{
+    background-color:#1F6181;    
+}
+
+.tabela-quadro1 .cor-cinza01{
+    background-color:#C7C8CA;
+}
+.tabela-quadro1 .cor-cinza02{
+    background-color:#DCDDDF;
+}
+.tabela-quadro1 td{
+    padding: 10px;
+}
+
+.tabela-quadro1 .text-azul{
+    color:#1F6181;    
+}
+.tabela-quadro1 .bl-white{
+    border-left: 1px solid white;
+}
+
+.tabela-quadro1 .bb-white{
+    border-bottom: 1px solid white;
+}
+
+.legenda-tabela{
+    border-bottom: 2px solid #A6B4BD ;
+}
+
+.legenda-tabela span{
+    display: inline-block;
+    vertical-align: middle;
+    width: 70px;
+    height: 30px;
+}
+.legenda-tabela p{
+    margin: 0;
+}
+.legenda-tabela .cor-cinza01{
+    background-color:#C7C8CA;
+}
+.legenda-tabela  .cor-cinza02{
+    background-color:#DCDDDF;
+}
+
+.rotateme{
+    writing-mode: vertical-lr;
+    -ms-writing-mode: tb-rl;
+    transform: rotate(180deg);
+}

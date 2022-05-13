@@ -133,8 +133,8 @@ a.btn-sesc{
     /*color: white;*/
 }
 
-.bloco .container > blockquote p,
-.bloco .container > p, .bloco .container > h2, .bloco .container > h3 
+.bloco > .container > blockquote p,
+.bloco > .container > p, .bloco .container > h2, .bloco .container > h3 
 {
     color: white;
 }
