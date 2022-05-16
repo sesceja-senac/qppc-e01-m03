@@ -219,4 +219,51 @@ figure figcaption, .legenda{
     margin-top: 1rem;
     margin-bottom: 1rem;
     text-align: center;
-  }
+}
+
+.figura-12-especial{
+    background-image: url(../figuras/figura12_bg.png);
+    width: 120px;
+    height: 120px;
+    display: block;
+    margin: 1rem auto;
+    position: relative;
+
+}
+.figura-12-especial .bt-eixo{
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    position: absolute;
+    border: 2px solid black;
+    transition: 200ms;
+    transform-origin: center;
+}
+.figura-12-especial .bt-eixo:hover{
+    transform: scale(1.5);
+}
+.figura-12-especial .bt-eixo.bt-eixo1{
+    background-color: #fecb22;
+    top: 10px;
+    left: 50px;
+}
+.figura-12-especial .bt-eixo.bt-eixo2{
+    background-color: #7bbe76;
+    top: 39px;
+    left: 90px;
+}
+.figura-12-especial .bt-eixo.bt-eixo3{
+    background-color: #1dace4;
+    top: 88px;
+    left: 75px;
+}
+.figura-12-especial .bt-eixo.bt-eixo4{
+    background-color: #f29337;
+    top: 88px;
+    left: 25px;
+}
+.figura-12-especial .bt-eixo.bt-eixo5{
+    background-color: #f01da0;    
+    top: 39px;
+    left: 9px;
+}

@@ -1650,9 +1650,18 @@
     
                                             <p>Veja a seguir, em percentual, a projeção da média ponderada anual, por eixo, das produções culturais:</p>
     
-                                            <marker>inserir tooltips na imagem, confirmar com DE</marker>
+                                          
+                                            <p class="no-print text-center" aria-hidden="true">Passe o cursor sobre as cores do gráfico para visualizar as percentuais.</p>
+                                            <div class="figura-12-especial no-print" data-aos="zoom-in" aria-hidden="true">
+                                                <button class="bt-eixo bt-eixo1" data-bs-toggle="tooltip" title="Eixo 1 – Impacto no turismo (35%)"><span class="sr-only">Eixo 1.</span></button>
+                                                <button class="bt-eixo bt-eixo2" data-bs-toggle="tooltip" data-bs-placement="right" title="Eixo 2 – Impacto na geração de emprego e renda (35%)"><span class="sr-only">Eixo 2.</span></button>
+                                                <button class="bt-eixo bt-eixo3" data-bs-toggle="tooltip" data-bs-placement="right" title="Eixo 3 – Impactos na atração de investimentos (10%)"><span class="sr-only">Eixo 3.</span></button>
+                                                <button class="bt-eixo bt-eixo4" data-bs-toggle="tooltip" data-bs-placement="left" title="Eixo 4 – Impacto social (10%)"><span class="sr-only">Eixo 4.</span></button>
+                                                <button class="bt-eixo bt-eixo5" data-bs-toggle="tooltip" data-bs-placement="left" title="Eixo 5 – Potencial de continuidade e expansão (10%)"><span class="sr-only">Eixo 5.</span></button>
+                                            </div>
                                             <figure>
-                                                <img src="assets/figuras/figura12.png" alt="" class="img-fluid d-block mx-auto my-4">
+                                               <img src="assets/figuras/figura12.png" alt="" class="img-fluid d-none print mx-auto my-4">
+                                               
                                                 <figcaption>Figura 12 – Gráfico percentual<br aria-hidden="true">Fonte: Brasil (2018)</figcaption>
                                             </figure>
                                             <p class="sr-only">
@@ -1989,6 +1998,8 @@
       console.log('conteudo do accordion '+$(accordion).attr('id')+" está acessivel");
     })
   </script>
+
+
 </body>
 
 </html>
