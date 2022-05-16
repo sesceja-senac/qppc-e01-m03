@@ -95,7 +95,7 @@ font-weight: 700;
 
 @media print {
 
-    html,body{height:100%;width:100%;margin:0;padding:0;}
+  
 
 
     @page {
@@ -103,18 +103,15 @@ font-weight: 700;
         margin-top: 3cm;
         margin-bottom: 2cm;
         margin-right: 2cm;
-        margin-left: 2cm;
-        max-height:100%;
-	      max-width:100%
+        margin-left: 3cm;
       }
 
-      /*
       html, body {
         height: 100%;
         padding-left: unset;
         padding-right: unset;
       }
-      */
+
       *,
       *:before,
       *:after,
@@ -133,7 +130,7 @@ font-weight: 700;
         page-break-inside: avoid;
       }
       a[href]:after {
-        /*content: " (" attr(href) ")";*/
+        content: " (" attr(href) ")";
       }
       a[data-toggle='collapse']:after {
         content: "";
@@ -334,7 +331,7 @@ p{
       transition: none;
       width: auto;
       margin: 0;
-      margin-top: 2rem;
+      margin-top: 5rem;
       margin-bottom: 0rem;
   }
   .modal-dialog .modal-header .btn-close{
@@ -352,14 +349,9 @@ p{
 /* ------------------------------------- */
 
 /* TAGS .print e .no-print */
-.print,  .imprimir{
+.print, .only-print, .apenas-print, .imprimir, .apenas-imprimir {
   display: block !important;
 }
-
-.only-print, .apenas-print, .apenas-imprimir{
-  display: initial !important;
-}
-
 .acessivel.print, .acessivel.imprimir {
   width: unset;
   height: unset;
@@ -396,49 +388,5 @@ p{
 
 }
 
-.pagina a:link	{
-  color: (internal value);
-  text-decoration: underline;
-  cursor: auto;
-  }
-  .pagina a:visited{
-  color: (internal value);
-  text-decoration: underline;
-  cursor: auto;
-  }
-  .pagina a:link:active{
-  color: (internal value);
-  }
-  .pagina a:visited:active{
-  color: (internal value);
-  }
 
-
-  .mapa-periodo-colonial{
-    transform:translateY(45%) translateX(-4cm) rotate(-90deg);
-    page-break-inside: avoid !important;
-    break-inside: avoid !important;
-    page-break-before: always  !important;
-    page-break-after: always !important;
-    width: 24cm !important;  
-   
-    margin: 0 !important;
-    padding: 0 !important;   
-    display: block !important;
-    max-width: unset !important;  
-  }
-
-.mapa-tribos{
-  width: 100% !important;
-  max-width: initial !important;
-
-}
-
-#sec5 h3{
-  margin-top: -2cm;
-}
-
-  .leitor-only{
-    display: none !important;
-  }
 }

@@ -37,7 +37,7 @@
         <header class="titulo-conteudo mb-0 print">
             <div class="container" style="padding-top:1px">
                 <!--titulo do curso para o print e leitor de tela-->
-                <h1 id="nome-curso" class="d-none print mt-0 text-center w-100">Matemática</h1>
+                <h1 id="nome-curso" class="d-none print mt-0 text-center w-100">Produtor Cultural</h1>
                 <div class="row g-0 pb-4 pt-4">
                     <div class="col-9 sr-only-focusable d-flex flex-column justify-content-center align-items-start">
                         <!-- <h2>Matemática</h2> -->
@@ -75,7 +75,7 @@
                         <p>Também foi abordada a perspectiva do entendimento de que ninguém está fora da cultura e de que ela é essencial para o exercício da cidadania – a construção de uma democracia cultural. Além disso, afirmou-se que a defesa das identidades culturais (negros, indígenas, mulheres, <a href="Javascript:" data-bs-toggle="tooltip" data-bs-original-title="Sigla para lésbicas, gays, bissexuais, transexuais, queer, intersexuais, assexuais.">LGBTQIA+</a>, pessoas com deficiência etc.) corresponde diretamente ao respeito à democracia e à cidadania cultural.</p>
 
                         <div data-aos="fade-up" class="p-3">
-                            <p class="icone avancar" >Agora, você estudará sobre os caminhos que fazedores de arte e cultura andam seguindo em direção à sustentabilidade e ao impacto econômico, não apenas no setor da cultura, mas também na economia, gerando frentes de trabalho, renda, cooperativas etc.</p>
+                            <div class="icone avancar" >Agora, você estudará sobre os caminhos que fazedores de arte e cultura andam seguindo em direção à sustentabilidade e ao impacto econômico, não apenas no setor da cultura, mas também na economia, gerando frentes de trabalho, renda, cooperativas etc.</div>
                         </div>
                     </div> 
                 </div>
@@ -110,8 +110,8 @@
 
                 <!--bloco 03-->
                 <div class="container">
-                   <p class="mt-4"><strong>Clique</strong> ou <strong>toque</strong> para visualizar o conteúdo.</p>
-                   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo quia excepturi a corrupti enim
+                   <p class="mt-4 no-print" aria-hidden="true"><strong>Clique</strong> ou <strong>toque</strong> para visualizar o conteúdo.</p>
+                   
                     
                     <div id="carousel-bloco03" class="carousel slide sesc" data-bs-ride="carousel">                       
                         <div class="carousel-inner" role="listbox">
@@ -169,7 +169,7 @@
                 <!--bloco 04-->
                 <div class="bloco estilo2">
                     <div class="container">
-                        <p class="no-print">Passe o cursor sobre a figura para visualizar o conteudo.</p>
+                        <p class="no-print" aria-hidden="true">Passe o cursor sobre a figura para visualizar o conteudo.</p>
                         <!--tabela interativa-->
                         <div data-aos="flip-right">
                             <div class="tabela-interativa fechada">
@@ -225,11 +225,11 @@
                         </div>
                             
     
-                        <div class="caixa cor-txt-6	">
+                        <div class="caixa cor-txt-6	my-5">
                             <div class="row">
                                 <div class="col-6">
                                     <figure>
-                                        <img src="" alt="">
+                                        <img src="assets/figuras/figura02.png" class="img-fluid d-block mx-auto" alt="">
                                         <figcaption>Figura 2 – Festival de Parintins
                                             <br aria-hidden="true">Fonte: Paiva (2016)</figcaption>
                                     </figure>
@@ -258,11 +258,12 @@
                 <div class="container pt-4">
                     <p>Veja a seguir um importante documento que promove a diversidade das expressões culturais.</p>
 
-                    <p class=""><strong>Clique</strong> ou <strong>toque</strong> para visualizar o conteúdo.</p>
+                    <p class=" no-print" aria-hidden="true"><strong>Clique</strong> ou <strong>toque</strong> para visualizar o conteúdo.</p>
 
                     <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#modal-01">
-                        Convenção sobre a proteção e promoção da Diversidade das Expressões Culturais
+                    <button type="button" class="btn-convencao no-print border-0 d-block mx-auto my-4" data-bs-toggle="modal" data-bs-target="#modal-01" aria-hidden="true">
+                        <!--Convenção sobre a proteção e promoção da Diversidade das Expressões Culturais-->
+                        <img src="assets/figuras/img_botao_convencao.png" alt="">
                     </button>
                     
                     <!-- Modal -->
@@ -274,11 +275,18 @@
                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fas fa-times"></i></button>
                                 </div>
                                 <div class="modal-body">
-                                    <p>A <strong>Convenção sobre a Proteção e Promoção da Diversidade das Expressões Culturais</strong>, da Organização das Nações Unidas para Educação, a Ciência e a Cultura (Unesco, 2005), é um importante documento para a orientação de políticas públicas de desenvolvimento.</p>
-                                    <figure>
-                                        <img src="" alt="Convenção" class="img-fluid d-block mx-auto">
-                                    </figure>
-                                    <p>No segundo artigo da convenção estão expostos oito <strong>princípios diretores</strong> e, entre eles, serão destacados os princípios 5 e 6:</p>
+                                    <div class="row">
+                                        <div class="col-lg-3">
+                                            <figure>
+                                                <img src="assets/figuras/img_convencao.png" alt="Convenção" class="img-fluid d-block mx-auto">
+                                            </figure>
+                                        </div>
+                                        <div class="col-lg-9">
+                                            <p>A <strong>Convenção sobre a Proteção e Promoção da Diversidade das Expressões Culturais</strong>, da Organização das Nações Unidas para Educação, a Ciência e a Cultura (Unesco, 2005), é um importante documento para a orientação de políticas públicas de desenvolvimento.</p>                                   
+                                            <p>No segundo artigo da convenção estão expostos oito <strong>princípios diretores</strong> e, entre eles, serão destacados os princípios 5 e 6:</p>
+                                        </div>
+                                    </div>
+                                    
                                     <blockquote class="citacao">
                                         <div class="row">
                                             <div class="col-2">
@@ -365,9 +373,9 @@
                 <!--bloco 08-->
                 <div class="bloco estilo1">
                     <div class="container">
-                        <p><strong>Clique</strong> ou <strong>toque</strong> para visualizar o conteúdo.</p>
+                        <p class=" no-print" aria-hidden="true"><strong>Clique</strong> ou <strong>toque</strong> para visualizar o conteúdo.</p>
                         
-                        <div class="painel-fullscreen">
+                        <div class="painel-fullscreen no-print">
                             <!-- Button trigger modal -->
                             <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#modal-bloco08-01">
                                 Economia criativa
@@ -397,7 +405,7 @@
                                                 <p>Diferentemente de uma fábrica de automóveis, uma empresa como a InfoPreta mobiliza a criatividade de seus trabalhadores para gerar produtos <a href="Javascript:" data-bs-toggle="tooltip" data-bs-original-title="Intangível é o que não se pode tocar, que não é material.">intangíveis</a> baseados no conhecimento, pensando soluções que contribuam para o desenvolvimento social.</p>
 
                                                 <figure>
-                                                    <img src="" alt="">
+                                                    <img src="assets/figuras/figura03.png" class="img-fluid d-block mx-auto my-4" alt="Akin Abaz">
                                                     <figcaption>Figura 3 – Akin Abaz, fundadora da InfoPreta, na oficina de conserto de computadores da empresa
                                                         <br aria-hidden="true">Fonte: InfoPreta (s.d.)</figcaption>
                                                 </figure>
@@ -410,7 +418,7 @@
 
                                             <p>É importante frisar que o exemplo da InfoPreta não se refere a um empreendimento cultural, isso porque a economia criativa é um campo bastante amplo, que envolve diversos setores, inclusive o cultural. Em um mapeamento realizado pela Federação das Indústrias do Rio de Janeiro (FIRJAN, 2019), entre 2015 e 2017, as atividades de economia criativa no Brasil foram organizadas em quatro setores: consumo, cultura, mídias e tecnologia. As informações a seguir foram adaptadas do <em>Mapeamento da Indústria Criativa no Brasil</em>, da Firjan (2019).</p>
 
-                                            <p><strong>Clique</strong> ou <strong>toque</strong> para visualizar o conteúdo.</p>
+                                            <p class=" no-print" aria-hidden="true"><strong>Clique</strong> ou <strong>toque</strong> para visualizar o conteúdo.</p>
 
                                             <div class="accordion painel-gaitinha no-print" id="Gaitinha01">
                                                 <div class="accordion-item">
@@ -511,9 +519,9 @@
                                     </div>
                                     <div class="modal-body">
                                         <div class="container">
-                                            <p class="caixa anotacao">
+                                            <div class="caixa icone anotar">
                                                 Economia da cultura refere-se ao uso das ferramentas da ciência econômica para a compreensão do impacto econômico das atividades, dos produtos e serviços culturais.
-                                            </p>
+                                            </div>
                                             <p>Como mencionado, a cultura faz parte da vida das pessoas e todas participam da produção de culturas, por isso, a cultura precisa sempre ser considerada sob termos de diversidade cultural. A economia, como descreve o pesquisador brasileiro Leandro Valiati (s.d.), é o estudo das escolhas feitas em todos os níveis e utiliza metodologias específicas para compreender essas escolhas. Então, é necessário que a economia da cultura formule metodologias adequadas para a compreensão do setor cultural. </p>
                                             <p>Segundo o pesquisador estadunidense Allen Scott (<em>apud</em> DINIZ; MENDES, 2017, p. 32),</p>
                                             <blockquote class="citacao">falar de produtos culturais é falar de identidade, ideologia, poder, tanto quanto de lucros e fluxos monetários, desta maneira, é imperativo criar uma regulação internacional que se atente que a produção de bens culturais não é a mesma coisa de produzir aço e partes de carros.</blockquote>
@@ -522,7 +530,7 @@
                                             <p>A partir da percepção do que o autor citado Paulo Miguez (2011) chama de uma “natureza dupla” da cultura, é possível pensar, por exemplo, em como ocorrem os processos produtivos da cultura, ou seja, quais são os seus custos, como se organizam os investimentos, como se estruturam as relações de trabalho – quem são os trabalhadores, qual sua formação, quanto recebem por seu trabalho –, como se estabelece a oferta de produtos e serviços culturais e como se comporta a demanda, ou seja, como se dá o acesso aos produtos e serviços oferecidos, como os diferentes públicos escolhem o que consumir, quanto gastam, entre tantos outros parâmetros de interesse para a compreensão do funcionamento econômico do setor cultural. </p>
     
                                             <figure>
-                                                <img src="" alt="figura 4">
+                                                <img src="assets/figuras/figura04.png" alt="figura 4" class="img-fluid d-block mx-auto my-4">
                                                 <figcaption>Figura 4 – Festa de São João em Campina Grande/PB, o Maior São João do Mundo, realizada no Parque do Povo
                                                     <br aria-hidden="true">Fonte: PASSOS (2021)</figcaption>
                                             </figure>
@@ -544,7 +552,7 @@
                                             <p>Os pesquisadores identificaram 1.144 atores econômicos (empresariais e culturais) envolvidos na realização da festa:</p>
     
                                             <div class="table-responsive">
-                                                <table class="sesc">
+                                                <table class="sesc w-100 my-4">
                                                     <tbody>
                                                         <tr>
                                                             <td>
@@ -747,7 +755,7 @@
                     <img src="../../assets/img/vetor-bg-33.png" class="rellax detalhe5 no-print" data-rellax-speed="3" data-rellax-zindex="10" alt="">
                 </div>
 
-                <footer class="text-center p-4">
+                <footer class="text-center p-4 no-print">
                     <a role="navigation" href="../../index.html" class="btn-sesc d-inline-block"> <i class="fa fa-chevron-up" aria-hidden="true"></i> Início</a>
                     <a role="navigation" href="index.html?page=2" class="btn-sesc d-inline-block">Avançar <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
                 </footer>
@@ -768,10 +776,10 @@
                     <p>Você deve se perguntar: como pode melhor entender os impactos econômicos e as políticas de desenvolvimento para produzir cultura? Como pode entender melhor o movimento de desenvolvimento econômico cultural no seu território (local, regional e nacional)? Quais são os caminhos que podem ser traçados para a realização de produções culturais?</p>
                     <p><p>Para essas questões e outras tantas, é preciso mergulhar nas políticas e nos projetos de <strong>economia da cultura</strong>.</p></p>
 
-                    <div class="caixa">
+                    <div class="caixa mb-4">
                         <div class="row">
                             <div class="col-3">
-                                <img src="" alt="imagem">
+                                <img src="assets/figuras/img_obra_performing_arts.png" alt="imagem">
                             </div>
                             <div class="col-9">
                                 <p>No livro <em>Performing Arts: The Economic Dilemma</em>, escrito pelos pesquisadores estadunidenses Baumol e Bowen (1966), surge pela primeira vez o termo <strong>economia da cultura</strong>. No texto da obra, tem-se uma análise e uma reflexão sobre musicais estadunidenses, destacando-se a dificuldade de sua produção, tendo em vista a multiplicidade de áreas que esse tipo espetáculo abrange: cenografia, iluminação, aluguel de teatro, limpeza, bilheteria, atores, entre tantas outras.</p>
@@ -793,7 +801,7 @@
                 <!--bloco pg02 02-->
                 <div class="bloco estilo3 ">
                     <div class="container pt-4">
-                        <div class="infografico-timeline my-3">
+                        <div class="infografico-timeline my-3 no-print">
                                 <!-- Button trigger modal -->
                                 <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#modal-1990">
                                     Anos 1990
@@ -912,7 +920,7 @@
                         <p>Como trazer, por exemplo, para o Brasil, esse tipo de perspectiva de uma economia da cultura calcada na diversidade cultural do um povo? Isso é possível?</p>
 
                         <figure>
-                            <img src="" alt="">
+                            <img src="assets/figuras/figura05.png" alt="" class="img-fluid d-block mx-auto my-4">
                             <figcaption class="text-white">Figura 5 – Embaixada neozelandesa e integrantes da etnia Kayapó
                                 <br aria-hidden="true">Fonte: Abiorana (2019)</figcaption>
                         </figure>
@@ -934,7 +942,7 @@
                     <p>Desde 2015, o governo da Nova Zelândia vem buscando na economia da cultura uma forma de resgatar a cultura milenar maori, que à época era vista com desprezo por grande parte da população, chegando ao limiar de apagamentos e preconceitos: a cultura maori era vista como baixa, menor e vil, sendo empurrada para fora dos grandes centros urbanos e perseguidas pelo “progresso” civilizatório (você percebe alguma semelhança com os povos originários brasileiros?). Porém, tudo mudou quando as ideias de uma economia cultural desembarcaram nas ilhas e um processo de valorização cultural, enquanto força econômica e social, começou.</p>
                     <div class="row">
                         <div class="col-4">
-                            <img src="" alt="Disney">
+                            <img src="assets/figuras/img_disney.png" alt="Disney" class="img-fluid d-block mx-auto">
                         </div>
                         <div class="col-8">
                             <p>Até o gigante estúdio cinematográfico estadunidense, Disney, uns anos depois, incorporou em seu catálogo alguns aspectos e mitologias da cultura neozelandesa:  você já ouviu falar do filme Moana (“oceano”, em <em>Teo Reo Māori</em>)? O diretor deste filme, o neozelandês Taika Waititi (que dirigiu também os filmes Thor: Ragnarok, Jojo Rabbit, entre outros), logo após o lançamento da produção, correu para lançar em seu país a versão em língua maori, que, segundo <em>sites</em> especializados, foi um sucesso de público e crítica. Mesmo que a língua falada no país de Taika seja o inglês, e que a versão em <em>Te Reo</em> não tenha tido legenda em inglês, mais de 30 cinemas disponibilizaram esta versão, e os ingressos para o primeiro final de semana de exibição acabaram no primeiro dia.</p>
@@ -953,7 +961,7 @@
                         <p>Não é a primeira vez que a cultura maori desembarca em solo brasileiro. Em 2015, a embaixada neozelandesa no Brasil e a Funai produziram um grande evento no Rio de Janeiro, que integrou as culturas Maori e Kayapó do Xingu, com seminários, visitas a terras indígenas, oficinas culturais, apresentações, exposições, cantos, artes e finalizando o encontro com a produção de uma embarcação neozelandesa com pinturas brasileiras – obra que está exposta no museu da Funai/RJ. </p>
                         <p>No perfil oficial no Facebook da Embaixada da Nova Zelândia no Brasil, você tem acesso ao vídeo documentário <em>Maori Exhibition – Tuku Iho –</em> Rio de janeiro. Além disso, no YouTube, no “Canal Curta” (imagem a seguir), você encontra o curador que acompanhou a comitiva, o neozelandês Karl Johnstone, falando sobre a cultura maori, os costumes, as pinturas corporais (tatuagens), o <em>Haka</em> (dança de guerra), a música, entre outros.</p>
                         <figure class="my-2">
-                            <img src="" alt="">
+                            <img src="assets/figuras/figura06.png" alt="" class="img-fluid d-block mx-auto my-4">
                             <figcaption class="text-white">Figura 6 – Encontro entre Kayapós e Maoris – 2015
                                 <br aria-hidden="true">Fonte:  Canal Curta (2015)</figcaption>
                         </figure>
@@ -1000,9 +1008,9 @@
                     <div class="container">
                         <h3>Cultura como fator de geração de emprego e renda</h3>
                         <p>A história da institucionalização da cultura no Brasil pode ser descrita da seguinte forma:</p>
-                        <p><strong>Clique</strong> ou <strong>toque</strong> para visualizar o conteúdo.</p>
+                        <p class=" no-print" aria-hidden="true"><strong>Clique</strong> ou <strong>toque</strong> para visualizar o conteúdo.</p>
                         
-                        <div class="painel-timeline-02 text-center my-4">
+                        <div class="painel-timeline-02 text-center my-4 no-print">
                             <!-- Button trigger modal -->
                             <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#modal-timeline02-1930">
                                 1930
@@ -1234,7 +1242,7 @@
                         <p>Além de centros de formação, festivais e feiras promovidas por organizações, como o Sesc, destacam-se, em cenário nacional, o Sesc Palco Giratório e o Rumos Itaú Cultural. Ambas as iniciativas visam a investimentos no fortalecimento da diversidade cultural enquanto expressão identitária, assim como intercâmbios culturais. Essas iniciativas servem também como forte mola propulsora da economia cultural local, já que contemplam projetos artísticos/culturais que circulam em território nacional por diferentes locais, para além das capitais e do Distrito Federal.</p>
 
                         <figure>
-                            <img src="" alt="">
+                            <img src="assets/figuras/figura07.png" alt="" class="img-fluid d-block mx-auto my-4">
                             <figcaption class="text-white">Figura 7 – Banner de divulgação
                                 <br aria-hidden="true">Fonte: Serviço Social do Comércio (s.d.)</figcaption>
                         </figure>
@@ -1432,7 +1440,7 @@
                     <p>Outra organização que opera com a economia da cultura é o Serviço Brasileiro de Apoio às Micro e Pequenas Empresa (Sebrae). Em mapeamento de 2020 na região Nordeste do Brasil, o Sebrae observou que 63% dos produtores locais trabalham com arte/cultura, 47% com bens de consumo e 25% com mídias. Além disso, o estudo apontou que a idade dos produtores varia entre 30 e 39 anos, em sua maioria, e que 55% destas são mulheres. O estudo indica também que 60% das iniciativas nunca procuraram ou tentaram financiamento por leis de incentivos, e que mais de 60% dos mapeados procuram o Sebrae para orientação, com o intuito de remodelar seu negócio (IMPACTA NORDESTE, 2022). Esse estudo está disponível no <em>site</em> do <strong>Impacta Nordeste</strong>.</p>
 
                     <figure>
-                        <img src="" alt="">
+                        <img src="assets/figuras/figura08.png" alt="" class="img-fluid d-block mx-auto my-4">
                         <figcaption>Figura 8 – Infográfico Sebrae Nordeste – 2020
                             <br aria-hidden="true">Fonte: Impacta Nordeste (2022)</figcaption>
                     </figure>
@@ -1459,15 +1467,15 @@
                         <p>Desta forma, percebe-se que a economia tem uma relação direta com a cultura, e vice-versa, considerando tudo o que foi estudado até este momento. Segundo o sociólogo Cândido José Mendes de Almeida (1993), “a atividade cultural deve ser estendida para a produção de riquezas, geração de renda e empregos, proporcionando arrecadação tributária e distribuição de recursos pela união”. </p>
                         <p><p>O infográfico a seguir resume um relatório do MinC sobre a atualização do mapeamento da economia criativa no Brasil, da Firjan, em relação ao evento de Indústrias Criativas de 2018, realizado em São Paulo no mesmo ano. O megaevento foi marcado pela ocupação de diversas regiões da Avenida Paulista, oferecendo palestras, oficinas, <em>shows</em>, debates e espetáculos.</p></p>
 
-                        <p><strong>Clique</strong> ou <strong>toque</strong> para visualizar o conteúdo.</p>
+                        <p class=" no-print" aria-hidden="true"><strong>Clique</strong> ou <strong>toque</strong> para visualizar o conteúdo.</p>
 
                         <div id="carousel-pg02-bloco10" class="carousel slide sesc" data-bs-ride="carousel" aria-hidden="false">
                             <div class="carousel-inner" role="listbox">
                                 <div class="carousel-item active">
-                                   img-1
+                                   <img src="assets/figuras/figura09_01.png" alt="" class="img-fluid d-block mx-auto my-4">
                                 </div>
                                 <div class="carousel-item">
-                                   omg-2 
+                                   <img src="assets/figuras/figura09_02.png" alt="" class="img-fluid d-block mx-auto my-4">
                                 </div>
                             </div>
                             <button class="carousel-control-prev" type="button" data-bs-target="#carousel-pg02-bloco10" data-bs-slide="prev">
@@ -1503,7 +1511,7 @@
                     <p>Desde 2018, o setor cultural brasileiro empregou mais de 5 milhões de pessoas direta e indiretamente, mesmo com a retração ocorrida pela pandemia de covid-19, conforme mostra o gráfico a seguir.</p>
 
                     <figure>
-                        <img src="" alt="">
+                        <img src="assets/figuras/figura10.png" alt="" class="img-fluid d-block mx-auto my-4">
                         <figcaption>Figura 10 – Gráfico de pessoas empregadas no setor cultural
                             <br aria-hidden="true">Fonte:  Brasil (2022)</figcaption>
                     </figure>
@@ -1598,9 +1606,9 @@
                     <div class="container">
                         <p>Esses resultados foram divulgados na Agência Brasil em janeiro de 2022 pelo Instituto de Pesquisa Econômica Aplicada (IPEA), utilizando informações da Pesquisa Nacional de Amostragem de Domicílios (PNAD) e informações e indicadores do Instituto Brasileiro de Geografia e Estatística (IBGE).  </p>
                         <div class="row">
-                            <div class="col-lg-4"><img src="" alt=""></div>
-                            <div class="col-lg-6">
-                                <p>A <em>Carta de Conjuntura</em> do IPEA, de 2022, citada no quadro anterior, aponta que a pandemia interferiu tanto na demanda quanto na oferta de trabalhos culturais, pois a retração devido ao distanciamento fez da cultura um dos setores mais afetados.</p>
+                            <div class="col-lg-4"><img src="assets/figuras/img_carta_conjuntura.png" class="img-fluid" alt=""></div>
+                            <div class="col-lg-8">
+                                <p class="text-white">A <em>Carta de Conjuntura</em> do IPEA, de 2022, citada no quadro anterior, aponta que a pandemia interferiu tanto na demanda quanto na oferta de trabalhos culturais, pois a retração devido ao distanciamento fez da cultura um dos setores mais afetados.</p>
                             </div>                            
                         </div>
                         <p>Como visto no quadro, há uma queda vertiginosa da força de trabalho cultural. O estudo aponta que a retomada está diretamente ligada à criação, no final de 2020, do auxílio emergencial para a cultura, a Lei Aldir Blanc. Essa lei auxiliou a retomada do setor cultural e possibilitou que muitos fazedores de cultura tivessem algum recurso neste momento difícil. O próximo módulo abordará mais profundamente a leis e os fomentos, mas, por agora, você pode pesquisar mais sobre a Aldir Blanc no <em>site</em> da secretaria da cultura da sua cidade ou em portais de notícias, pois essa lei foi amplamente divulgada.</p>
@@ -1609,11 +1617,11 @@
                         
                         <p>Sendo assim, para que as ideias sejam colocadas no plano concreto, pensando em exemplificar na prática o que está sendo abordado, será utilizado como estudo de caso, de 2018, promovido à época pelo MinC, o projeto Rio de Janeiro a Janeiro, que faz uma análise detalhada e profunda da economia cultural da cidade maravilhosa.</p>
 
-                        <p><span>Clique</span> ou <span>toque</span> para visualizar o conteúdo.</p>
+                        <p class="no-print" aria-hidden="true"><strong>Clique</strong> ou <strong>toque</strong> para visualizar o conteúdo.</p>
 
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#modal-rio">
-                            Rio de Janeiro a Janeiro
+                        <button type="button" class="bt-rio no-print my-4 d-block mx-auto border-0 bg-transparent" data-bs-toggle="modal" data-bs-target="#modal-rio">
+                            <img src="assets/figuras/img_bt_rio.png" alt="">
                         </button>
                         
                         <!-- Modal rio-->
@@ -1629,7 +1637,7 @@
                                     <div class="modal-body">
                                         <div class="container">
                                             <figure>
-                                                <img src="" alt="">
+                                                <img src="assets/figuras/figura11.png" alt="" class="img-fluid d-block mx-auto my-4">
                                                 <figcaption>Figura 11 – Banner do evento<br aria-hidden="true">Fonte: Brasil (2018)</figcaption>
                                             </figure>
                                             <p class="sr-only"> Imagens com bordas, cujos traços lembram folhas, nas cores azul, amarelo, vermelho e rosa. Ao centro, consta o texto “Rio de Janeiro a Janeiro”.</p>
@@ -1644,7 +1652,7 @@
     
                                             <marker>inserir tooltips na imagem, confirmar com DE</marker>
                                             <figure>
-                                                <img src="" alt="">
+                                                <img src="assets/figuras/figura12.png" alt="" class="img-fluid d-block mx-auto my-4">
                                                 <figcaption>Figura 12 – Gráfico percentual<br aria-hidden="true">Fonte: Brasil (2018)</figcaption>
                                             </figure>
                                             <p class="sr-only">
@@ -1654,7 +1662,7 @@
     
                                             <p>Perceba que a geração de emprego e renda, assim como o turismo, toma a dianteira, e os demais eixos são distribuídos homogeneamente. Observe os exemplos: o primeiro, da metade do ano, o outro, de dezembro.</p>
     
-                                            <p><strong>Clique</strong> ou <strong>toque</strong> para visualizar o conteúdo.</p>
+                                            <p class=" no-print" aria-hidden="true"><strong>Clique</strong> ou <strong>toque</strong> para visualizar o conteúdo.</p>
     
                                             <div class="accordion painel-gaitinha no-print" id="Gaitinha02">
                                                 <div class="accordion-item">
@@ -1667,7 +1675,7 @@
                                                     <div class="accordion-body">
                                                         <p>O primeiro evento a ser analisado é o <strong>carnaval de rua</strong> do Rio de Janeiro, em plena alta temporada turística da cidade.</p>
                                                         <figure>
-                                                            <img src="" alt="">
+                                                            <img src="assets/figuras/figura13.png" alt="" class="img-fluid d-block mx-auto my-4"> 
                                                             <figcaption>Figura 13 – Infográfico do carnaval de rua<br aria-hidden="true">Fonte: Brasil (2018)</figcaption>
                                                         </figure>
                                                         <p class="sr-only">Infográfico do carnaval de rua do Rio 2018, com os seguintes dados: impacto econômico de R$ 282,96 milhões; ROI (retorno financeiro a cada R$ 1 real) de R$ 3,75; público estimado: 200 mil pessoas; empregos: 7,34 mil postos.</p>
@@ -1675,7 +1683,7 @@
                                                         <p>É importante perceber como o setor cultural movimenta uma economia além da cultural, pois tudo ao seu entorno também tem um potencial de ganhos. Neste caso, como é um evento de rua, o mapeamento dos setores não culturais é muito grande, abrangendo do aplicativo de transporte ao picolé. </p>
     
                                                         <figure>
-                                                            <img src="" alt="">
+                                                            <img src="assets/figuras/figura14" alt="" class="img-fluid d-block mx-auto my-4">
                                                             <figcaption>Figura 14 – Carnaval de rua na cidade do Rio de Janeiro<br aria-hidden="true">Fonte: G1 (2018)</figcaption>
                                                         </figure>
                                                         <p class="sr-only">
@@ -1694,13 +1702,13 @@
                                                     <div class="accordion-body">
                                                         <p>O segundo exemplo é a <strong>Parada do Orgulho LGBTQIA+ – Mês da Diversidade</strong>, que ocorre no mês de junho, em baixa temporada. Esse evento ocorre na rua, com passeatas, <em>shows</em> e apresentações ao longo da orla carioca.</p>
                                                         <figure>
-                                                            <img src="" alt="">
+                                                            <img src="assets/figuras/figura15.png" alt="" class="img-fluid d-block mx-auto my-4">
                                                             <figcaption>Figura 15 – Infográfico da Parada do Orgulho LGBTI<br aria-hidden="true">Fonte: Brasil (2018)</figcaption>
                                                         </figure>
                                                         <p class="sr-only"> Infográfico da Parada do Orgulho LGBTI – Mês da Diversidade, contendo as seguintes informações: impacto econômico de R$ 336,61 milhões; ROI (retorno do investimento a cada R$ 1) de R$ 11,45; público estimado de 800 mil pessoas; empregos estimados em 8,16 mil postos.</p>
                                                         <p>Nesse evento, percebe-se um aumento do impacto econômico, visto que também é um evento de rua, com retorno de investimento de R$ 11,45 e uma alavancagem econômica de 266,55, que significa um alto índice de investimento externo. Percebe-se que, semelhantemente ao exemplo anterior, os indicadores (eixos) se mantiveram muito próximos e somente o índice de impacto social teve uma breve retraída. </p>
                                                         <figure>
-                                                            <img src="" alt="">
+                                                            <img src="assets/figuras/figura16" alt="" class="img-fluid d-block mx-auto my-4">
                                                             <figcaption>Figura 16 – Parada LGBTQIA+ 2018<br aria-hidden="true">Fonte: Veja (2018)</figcaption>
                                                         </figure>
                                                         <p class="sr-only"> A imagem mostra uma multidão de pessoas na rua à beira mar, segurando um enorme tecido nas cores do arco-íris.</p>
@@ -1717,13 +1725,13 @@
                                                         <div class="accordion-body">
                                                             <p>O último exemplo é o Wired Festival, que é um evento de inovação, ciências, segurança, entretenimento, cultura, <em>design</em> e <em>lifestyle</em>, com palestras, <em>workshops</em>, <em>shows</em>, vivências, <em>networking</em>. O evento ocorreu na Casa França e no Centro Cultural Correios no mês de dezembro de 2018.</p>
                                                             <figure>
-                                                                <img src="" alt="">
+                                                                <img src="assets/figuras/figura17.png" alt="" class="img-fluid d-block mx-auto my-4">
                                                                 <figcaption>Figura 17 – Infográfico do Wired Festival<br aria-hidden="true">Fonte: Brasil (2018)</figcaption>
                                                             </figure>
                                                             <p class="sr-only">Infográfico do Wired Festival, com as informações: impacto econômico de R$ 13,74 milhões; ROI (retorno do investimento a cada R$ 1) de R$ 2,2; público estimado de 15 mil pessoas; empregos estimados em 361,78 postos.</p>
                                                             <p>Esse evento de menor porte têm um impacto econômico menor, talvez por movimentar menos espaços – dois, neste caso – e um retorno financeiro (ROI) de um pouco mais de R$ 2. Porém, mesmo sendo um evento pequeno, em relação aos outros dois exemplos, movimentou mais de R$ 15 mil e mais de 300 postos de trabalho.</p>
                                                             <figure>
-                                                                <img src="" alt="">
+                                                                <img src="assets/figuras/figura18.png" alt="" class="img-fluid d-block mx-auto my-4">
                                                                 <figcaption>Figura 18 – Clariza Rosa, da Jacaré Modas, no Wired Festival 2018<br aria-hidden="true">Fonte: Wired Festival Brasil (2019)</figcaption>
                                                             </figure>
                                                             <p class="sr-only">Uma mulher negra segurando um microfone durante uma palestra.</p>
@@ -1761,7 +1769,7 @@
                 </div>
 
                 
-                <footer class="text-center p-4">
+                <footer class="text-center p-4 no-print">
                     <a role="navigation" href="index.html?page=1" class="btn-sesc d-inline-block"><i class="fa fa-chevron-left" aria-hidden="true"></i> Voltar </a>
                     <a role="navigation" href="../../index.html" class="btn-sesc d-inline-block"> <i class="fa fa-chevron-up" aria-hidden="true"></i> Início</a>
                     <a role="navigation" href="index.html?page=3" class="btn-sesc d-inline-block">Avançar <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
@@ -1798,8 +1806,8 @@
                         <p>A economia solidária é uma alternativa de vida comunitária para geração de renda, combatendo o desemprego e a exclusão social, geralmente em função do desenvolvimento local. É uma economia que vai além das dimensões social e econômica e integra cultura, política e ecologia. O pensamento da economia solidária foi integrado às políticas públicas da cultura e a outros setores econômicos brasileiros. </p>
                         <p>Um exemplo de destaque é o das cooperativas de mulheres rendeiras do interior do Nordeste brasileiro, que reúnem artesãs da renda que trabalham e ofertam produtos em várias cidades do país.</p>
                         <figure>
-                            <img src="" alt="">
-                            <figcaption>Figura 19 – Cooperativas de mulheres rendeiras<br aria-hidden="true">Fonte: Armazém de ideias – Medium (2016)</figcaption>
+                            <img src="assets/figuras/figura19.png" alt="" class="img-fluid d-block mx-auto my-4">
+                            <figcaption class="text-white">Figura 19 – Cooperativas de mulheres rendeiras<br aria-hidden="true">Fonte: Armazém de ideias – Medium (2016)</figcaption>
                         </figure>
                         <p class="sr-only">
                             Fotografia de duas mulheres sentadas fazendo renda de bilro. Cada uma delas trabalha sobre uma almofada arredondada, com um cartão (molde) perfurado por alfinetes, que marca o gráfico do desenho da renda que elas estão executando. Cada alfinete está preso a um bilro de madeira, os quais elas estão tramando. Ao fundo estão duas mulheres em pé.
@@ -1815,10 +1823,10 @@
              
                 <!--bloco 03-->
                 <div class="container pt-4">
-                    <marker>perguntar sobre a tooltip para a DE</marker>
+                   
                     <p>Outro exemplo de economia solidária é a da rede do algodão ecológico brasileira. A Cooperativa Central Justa Trama, detentora da marca Justa Trama: Fibra Ecológica, que é uma cadeia produtiva iniciada com o plantio do algodão ecológico, distribui para a confecção de peças e comercializa toda essa produção. Entretanto, essa cadeia é formada por parceiros que cruzam de norte a sul o país. São seis associações e cooperativas em Rondônia, Ceará, Mato Grosso do Sul, Minas Gerais e Rio Grande do Sul, as quais congregam agricultores familiares, costureiras e artesãos, que, juntos, formam uma cadeia produtiva. A cadeia produtiva é um conjunto de processos em sequência que uma matéria-prima sofre a fim de transformá-la para a confecção de um produto final.</p>
                     <figure>
-                        <img src="" alt="">
+                        <img src="assets/figuras/figura20.png" alt="" class="img-fluid d-block mx-auto my-4">
                         <figcaption>Figura 20 – Cooperativa Central Justa Trama, Porto Alegre/RS<br aria-hidden="true">Fonte: Justa Trama (2018)</figcaption>
                     </figure>
                     <p class="sr-only">Foto de um grupo de mulheres em pé em um galpão com mesas, máquinas de costura e tecidos.</p>
@@ -1836,8 +1844,8 @@
                     <div class="container">
                         <p>Esses grupos de produção e serviços trabalham em redes de trocas e compartilham conhecimentos e valores, organizando-se e produzindo eventos, buscando parcerias com órgãos públicos e empresas privadas. Assim, acionam mecanismos dos mercados locais a favor do desenvolvimento social e da geração de renda, como o exemplo a seguir, a Feira de Pulgas de João Pessoa, que reúne, para a otimização dos esforços de trabalho e renda, objetos antigos, brechós, sebos de livros e vinil, atividades esportivas, tenda verde, comida vegana, diversidade da culinária regional e exposição de carro antigo.</p>
                         <figure>
-                            <img src="" alt="">
-                            <figcaption>Figura 21 – Feira de Pulgas de João Pessoa – 2022<br aria-hidden="true">Fonte: Andrezza Carla (2022)</figcaption>
+                            <img src="assets/figuras/figura21.png" alt="" class="img-fluid d-block mx-auto my-4">
+                            <figcaption class="text-white">Figura 21 – Feira de Pulgas de João Pessoa – 2022<br aria-hidden="true">Fonte: Andrezza Carla (2022)</figcaption>
                         </figure>
                         <p class="sr-only">Diversas pessoas na rua interagindo com inúmeras bancas de vendas de comidas, roupas, livros.</p>
                         <p>Percebe-se, assim, que, para além de economias criativas e da cultura, há a possibilidade de organização econômica cooperativa, na qual a união de forças é a marca deste tipo de proposta. </p>
@@ -1867,7 +1875,7 @@
                     
                 </div>
 
-                <footer class="text-center p-4">
+                <footer class="text-center p-4 no-print">
                     <a role="navigation" href="index.html?page=2" class="btn-sesc d-inline-block"><i class="fa fa-chevron-left" aria-hidden="true"></i> Voltar </a>
                     <a role="navigation" href="../../index.html" class="btn-sesc d-inline-block"> <i class="fa fa-chevron-up" aria-hidden="true"></i> Início</a>
                     <a role="navigation" href="referencias.html" class="btn-sesc d-inline-block"><i class="fa fa-book" aria-hidden="true"></i> Referências</a>

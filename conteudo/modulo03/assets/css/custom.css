@@ -145,6 +145,7 @@ marker{
     transform: rotate(180deg);
 }
 
+
 .citacao {
     background-color: #113f58;
     color: #fff;
@@ -155,3 +156,67 @@ marker{
     margin-top: 40px;
     margin-bottom: 40px;
 }
+
+.bloco .citacao{
+    border: 2px solid white;
+}
+
+.bloco .caixa{
+   box-shadow: 0 0 0 10px white;
+}
+
+.rellax{
+    z-index: 2;
+    pointer-events: none;
+    touch-action: none;
+    -ms-touch-action: none;
+}
+
+h3{
+    font-size: 1.6rem;
+  }
+  h4{
+    font-size: 1.3rem
+  }
+  h5{
+    font-size: 1.2rem
+  }
+
+  h3,h4,h5{
+      font-weight: bold;
+  }
+
+  a[data-bs-toggle="tooltip"]{
+    text-decoration: none;
+    border-bottom: 2px dashed #214d50;
+    color: #214d50;
+    font-weight: bolder;
+  }
+
+  .bloco a[data-bs-toggle="tooltip"]{
+      border-color: white;
+  }
+
+  .bt-rio:hover{
+      box-shadow: 0 0 0 5px white;
+      border-radius: 10px;
+      transform: scale(1.1);
+      transition: 100ms;
+  }
+  .btn-convencao{
+      background-color: transparent;
+  }
+  .btn-convencao:hover{
+    box-shadow: 0 0 0 5px #ff9700;
+    background-color:#ff9700 ;
+    border-radius: 10px;
+    transform: scale(1.1);
+    transition: 100ms;
+}
+
+figure figcaption, .legenda{
+    font-size: .9rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }

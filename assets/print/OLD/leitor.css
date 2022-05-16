@@ -2,11 +2,6 @@
 .pagina *{
  all: unset;
 }
-
-.pagina *.keep-print{
-  all:initial
-}
-
 .pagina p, .pagina li, .pagina a{
   font-family: 'Libre Franklin Regular'
 }
@@ -18,10 +13,6 @@
 }
 
 /* VALORES DEFAULT DE TUDO*/
-
-.ilustra {
-  display: none !important;
-}
 
 
 .pagina a:link	{
@@ -380,8 +371,8 @@
   vertical-align: middle;
   border-color: inherit;	
   }
-  .pagina th	{
-  display: table-cell;
+  th	{
+    display: table-cell;
   vertical-align: inherit;
   font-weight: bold;
   text-align: center;	
@@ -655,14 +646,10 @@ button, a {
   display: none !important;
 }
 
- .print, .imprimir {
+ .print, .only-print, .apenas-print, .imprimir, .apenas-imprimir {
   display: block !important;
 
 }
-.only-print, .apenas-print, .apenas-imprimir{
-  display: initial !important;
-}
-
 
   .no-print, .nao-imprimir {
   display: none !important;
@@ -860,71 +847,5 @@ iframe, iframe.youtube-pl{
   display: none;
 }
 
-img {
-  max-width: 50% !important;
-}
 
-figure {
-  text-align: center !important;
-}
-
-figcaption {
-  font-size: 12px !important;
-  text-align: center !important;
-}
-
-
-
-.break-all{
-  word-break: break-all;
-}
-
-.especial-print.row{
-  text-align: center;
-  width: 100%;  
-  columns: 3;
-}
-.especial-print .col-4{
-  width: 100%;
-  
-}
-.especial-print img{
-  width: 100%;
-  max-width: initial !important;
-}
-.mapa-tribos{
-  width: 100%;
-  max-width: initial !important;
-}
-
-.mapa-periodo-colonial{
-  display: none !important ;
-  max-width: initial !important;
-}
-.pagina a[data-bs-toggle="tooltip"]{
-  text-decoration: none;
-
-}
-.pagina a[data-bs-toggle="tooltip"]::after{
-  content: " [" attr(data-bs-original-title) "] ";
-  display: inline;
-}
-
-.pagina table{
-  border: 1px solid grey !important;
-  border-collapse: collapse !important;
-}
-
-.pagina table td, .pagina table th{
-  border: 1px solid grey !important;
-  padding: 10px;
-}
-
-.pagina .text-white{
-  color: initial !important;
-}
-
-.sr-only:not(.print){
-  display: none !important;
-}
 

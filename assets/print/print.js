@@ -140,7 +140,7 @@
     HTMLstring+='<script src="'+print_default_path+'print.js"></script>\n';
     //HTMLstring+='<script src="js/images.loader.js"></script>\n';
     //HTMLstring+='<script language="javascript">$(function (){ $(".pagina").css("display","block"); imagesLoader(false); });</script>'
-    HTMLstring+='<script language="javascript">$(function (){ $(".pagina").css("display","block");});</script>'
+    HTMLstring+='<script language="javascript">$(function (){ $(".pagina").css("display","block"); $(".modal-dialog").removeClass("modal-fullscreen")});</script>'
     HTMLstring+='</body>\n';
     HTMLstring+='</html>';
 
