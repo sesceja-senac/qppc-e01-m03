@@ -207,14 +207,14 @@ h3{
       background-color: transparent;
   }
   .btn-convencao:hover{
-    box-shadow: 0 0 0 5px #ff9700;
+    /*box-shadow: 0 0 0 5px #ff9700;
     background-color:#ff9700 ;
-    border-radius: 10px;
+    border-radius: 10px;*/
     transform: scale(1.1);
     transition: 100ms;
 }
 
-figure figcaption, .legenda{
+figure figcaption, .legenda, .legenda-imagem{
     font-size: .9rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -267,3 +267,52 @@ figure figcaption, .legenda{
     top: 39px;
     left: 9px;
 }
+.icone.anotar{
+    padding-left: 90px;
+}
+.icone.anotar::before{
+    background-image: url(../img/icone_nota.png);
+    background-size: contain;
+    background-position: center;
+
+}
+
+.imagem-interativa{
+    width: 620px;
+    height: 670px;
+    background-image: url(../img/painel_multiplicadores.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: white;
+    border: 10px white solid;
+    border-radius: 10px;
+}
+.imagem-interativa:hover{
+    background-image: url(../img/painel_multiplicadores_hover.png);
+}
+
+
+
+.slideshow01-tela{
+    border: 3px solid #00838D;
+    padding:10px;
+    min-height: 350px;
+}
+
+
+@media screen and (max-width: 700px){
+    .imagem-interativa{
+        width: Calc(620px * .65);
+        height: Calc(670px* .65);
+    }
+}
+
+@media screen and (max-width: 400px){
+    .imagem-interativa{
+        width: Calc(620px * .55);
+        height: Calc(670px* .55);
+    }
+}
+
+

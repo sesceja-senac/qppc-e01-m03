@@ -5,6 +5,8 @@ window.addEventListener('load', function(){
     })
 
     $('.preloader').fadeOut(300);
+
+    AOS.init()
 })
 
 $('.tabela-interativa').on('mouseover', function(){
