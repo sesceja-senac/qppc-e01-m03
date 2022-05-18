@@ -301,6 +301,13 @@ figure figcaption, .legenda, .legenda-imagem{
 }
 
 
+@media screen and (max-width:1366px){
+    .rellax{
+        max-width: 208px;
+    }
+}
+
+
 @media screen and (max-width: 700px){
     .imagem-interativa{
         width: Calc(620px * .65);
