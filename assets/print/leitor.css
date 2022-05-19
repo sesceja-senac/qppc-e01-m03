@@ -930,3 +930,7 @@ figcaption {
   display: none !important;
 }
 
+.destaque-diferenciado img{
+  max-width: 100% !important;
+}
+

@@ -164,14 +164,14 @@ marker{
 .bloco .caixa{
    box-shadow: 0 0 0 10px white;
 }
-
+/*
 .rellax{
     z-index: 2;
     pointer-events: none;
     touch-action: none;
     -ms-touch-action: none;
 }
-
+*/
 h3{
     font-size: 1.6rem;
   }
@@ -188,13 +188,15 @@ h3{
 
   a[data-bs-toggle="tooltip"]{
     text-decoration: none;
-    border-bottom: 2px dashed #214d50;
-    color: #214d50;
-    font-weight: bolder;
+    border: 1px dashed #00838D;
+    padding: 2px 4px;
+    color: #00838D;
+   
   }
 
-  .bloco a[data-bs-toggle="tooltip"]{
+a.inverter[data-bs-toggle="tooltip"]{
       border-color: white;
+      color: white;
   }
   .bt-rio{
       background-color: transparent;
@@ -258,19 +260,22 @@ figure figcaption, .legenda, .legenda-imagem, .legenda-imagem p{
     margin-bottom: 1rem;
     text-align: center;
 }
+:root{
+    --mult: 2.0
+}
 
 .figura-12-especial{
     background-image: url(../figuras/figura12_bg.png);
-    width: 120px;
-    height: 120px;
+    width: Calc(120px *  var(--mult));
+    height: Calc(120px *  var(--mult));
     display: block;
     margin: 1rem auto;
-    position: relative;
-
+    position: relative;   
+    background-size: contain;
 }
 .figura-12-especial .bt-eixo{
-    width: 18px;
-    height: 18px;
+    width: Calc(18px *  var(--mult));
+    height: Calc(18px *  var(--mult));
     border-radius: 50%;
     position: absolute;
     border: 2px solid black;
@@ -282,28 +287,28 @@ figure figcaption, .legenda, .legenda-imagem, .legenda-imagem p{
 }
 .figura-12-especial .bt-eixo.bt-eixo1{
     background-color: #fecb22;
-    top: 10px;
-    left: 50px;
+    top: Calc(10px * var(--mult));
+    left: Calc(50px *  var(--mult));
 }
 .figura-12-especial .bt-eixo.bt-eixo2{
     background-color: #7bbe76;
-    top: 39px;
-    left: 90px;
+    top: Calc(39px *  var(--mult));
+    left: Calc(90px *  var(--mult));
 }
 .figura-12-especial .bt-eixo.bt-eixo3{
     background-color: #1dace4;
-    top: 88px;
-    left: 75px;
+    top: Calc(88px *  var(--mult));
+    left: Calc(75px *  var(--mult));
 }
 .figura-12-especial .bt-eixo.bt-eixo4{
     background-color: #f29337;
-    top: 88px;
-    left: 25px;
+    top: Calc(88px *  var(--mult));
+    left: Calc(25px *  var(--mult));
 }
 .figura-12-especial .bt-eixo.bt-eixo5{
     background-color: #f01da0;    
-    top: 39px;
-    left: 9px;
+    top: Calc(39px *  var(--mult));
+    left: Calc(9px *  var(--mult));
 }
 .icone.anotar{
     padding-left: 90px;
@@ -441,7 +446,39 @@ Flip card
 }
 
 .icone.atencao::before{
-    background-image: url(../img/icone_saibamais.png);
+    background-image: url(../img/icone_importante.png);
+}
+
+
+/*classes para o parallax*/
+.parallax-esquerda, .parallax-direita{
+    position: absolute;
+    max-width: 25vw; 
+    overflow: hidden;
+}
+.parallax-esquerda{   
+    left: 0;    
+}
+.parallax-direita{ 
+    right: 0;   
+}
+.parallax-esquerda.top25,.parallax-direita.top25{
+    top: 25%;
+}
+.parallax-esquerda.top50,.parallax-direita.top50{
+    top: 50%;
+}
+.parallax-esquerda.top75,.parallax-direita.top75{
+    top: 75%;
+}
+.parallax-esquerda.top100,.parallax-direita.top100{
+    top: 100%;
+}
+.parallax-esquerda.content-left *,.parallax-direita.content-left *{
+    margin-left: -50%;
+}
+.parallax-esquerda.content-right *,.parallax-direita.content-right *{
+    margin-left: 50%;
 }
 
 
@@ -454,9 +491,27 @@ Flip card
         width: Calc(300px * 1.2);
         height: Calc(331px * 1.2);      
     }
+
+    .parallax-esquerda img,
+    .parallax-direita img
+    {   
+       max-width: 100%;  
+    } 
+    .parallax-esquerda.content-left *,.parallax-direita.content-left *{
+        margin-left: initial
+    }
+    .parallax-esquerda.content-right *,.parallax-direita.content-right *{
+        margin-left: initial;
+    }
+
 }
 
 @media screen and (max-width:994px) {
+    .parallax-esquerda,
+    .parallax-direita
+    {   
+       display: none;
+    } 
 
     #booklet{
         overflow-x: hidden;
@@ -474,21 +529,7 @@ Flip card
         padding-top: Calc(79px * .32);
         padding-left: Calc(80px * .5);
         padding-right: Calc(80px * .5);
-        background-size: contain;
-      
-    }
-
-    .caixa.icone::before{
-        left: Calc(35%);
-        top: -30px;
-    }
-
-    .caixa.icone{
-        margin-left: 0;
-        margin-right: 0;
-        width: 100%;
-        padding: 10px;
-        padding-top: 90px;        
+        background-size: contain;      
     }
     
     .btn-linhatempo{      
@@ -522,6 +563,19 @@ Flip card
     .slideshow01-tela{
         padding-left: 45px;
         padding-right: 45px;
+    }
+
+    .caixa.icone::before{
+        left: Calc(50% - 40px);
+        top: -30px;
+    }
+
+    .caixa.icone{
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+        padding: 10px;
+        padding-top: 90px;        
     }
 
 }
