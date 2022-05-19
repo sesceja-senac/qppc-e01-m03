@@ -520,9 +520,11 @@ h5 {
   }
 
   /* deixa tudo cinza */
+  /*
   .pagina *{
     filter: grayscale(1);
   }
+  */
 p{
 	font-size:12pt;
 	font-family:'robotoregular', Arial , Verdana, Helvetica;
