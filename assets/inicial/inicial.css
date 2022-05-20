@@ -61,6 +61,11 @@ h1{
     max-width: 450px; margin-left: -50px;
 }
 
+.barra-titulos{
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+}
+
 @media screen and (max-width:1366px){
     h1.main-title{
         font-size: 1.2rem;
@@ -68,6 +73,11 @@ h1{
     .main-photos{
         max-width: 65vw;
      }
+
+     .barra-titulos{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
 
 }
 
