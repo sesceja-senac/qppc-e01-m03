@@ -265,17 +265,18 @@ figure figcaption, .legenda, .legenda-imagem, .legenda-imagem p{
 }
 
 .figura-12-especial{
-    background-image: url(../figuras/figura12_bg.png);
+    background-image: url(../img/painel_clicavel_2.png);
     width: Calc(120px *  var(--mult));
     height: Calc(120px *  var(--mult));
     display: block;
     margin: 1rem auto;
     position: relative;   
     background-size: contain;
+    background-repeat: no-repeat;
 }
 .figura-12-especial .bt-eixo{
-    width: Calc(18px *  var(--mult));
-    height: Calc(18px *  var(--mult));
+    width: Calc(22px *  var(--mult));
+    height: Calc(22px *  var(--mult));
     border-radius: 50%;
     position: absolute;
     border: 2px solid black;
@@ -287,28 +288,28 @@ figure figcaption, .legenda, .legenda-imagem, .legenda-imagem p{
 }
 .figura-12-especial .bt-eixo.bt-eixo1{
     background-color: #fecb22;
-    top: Calc(10px * var(--mult));
+    top: Calc(0 * var(--mult));
     left: Calc(50px *  var(--mult));
 }
 .figura-12-especial .bt-eixo.bt-eixo2{
     background-color: #7bbe76;
-    top: Calc(39px *  var(--mult));
-    left: Calc(90px *  var(--mult));
+    top: Calc(35px *  var(--mult));
+    left: Calc(98px *  var(--mult));
 }
 .figura-12-especial .bt-eixo.bt-eixo3{
     background-color: #1dace4;
-    top: Calc(88px *  var(--mult));
-    left: Calc(75px *  var(--mult));
+    top: Calc(93px *  var(--mult));
+    left: Calc(78px *  var(--mult));
 }
 .figura-12-especial .bt-eixo.bt-eixo4{
     background-color: #f29337;
-    top: Calc(88px *  var(--mult));
-    left: Calc(25px *  var(--mult));
+    top: Calc(93px *  var(--mult));
+    left: Calc(19px *  var(--mult));
 }
 .figura-12-especial .bt-eixo.bt-eixo5{
     background-color: #f01da0;    
-    top: Calc(39px *  var(--mult));
-    left: Calc(9px *  var(--mult));
+    top: Calc(35px *  var(--mult));
+    left: Calc(0px *  var(--mult));
 }
 .icone.anotar{
     padding-left: 90px;

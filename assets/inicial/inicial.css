@@ -5,6 +5,7 @@ html,body{
     padding: 0;
     border: 0;
     overflow: hidden;
+    background-image: url(../inicial/tela_inicial_bg.png);
 }
 
 .menu-links ul{
@@ -21,7 +22,7 @@ h1{
 }
 .menu-links .btn-inicial{
     padding: 10px;
-    background-color: #00818a;
+    background-color: #FF9700;
     color: white;
     text-decoration: none;
     font-weight: bolder;
@@ -29,17 +30,47 @@ h1{
     border-radius: 10px;
     box-shadow: 0 4px 0 0 rgba(0, 0, 0, .15);
     width: 100%;
+    text-align: center;
+    font-size: .8rem;
+    min-height: 60px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 1.2;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
 }
 .menu-links .btn-inicial:hover,
 .menu-links .btn-inicial:focus{
-    background-color: orange;
+    background-color: rgb(255, 181, 43);
     transform: translateY(-2px);
     box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .15);
+    border: 3px solid white;
+    text-shadow: 0 2px 0 rgba(0, 0, 0, .15);
 }
 
 .h-lg-100{
     height: 100% !important;
 }
+.main-photos{
+   max-width: 70vw;
+}
+.main-img{
+    max-width: 450px; margin-left: -50px;
+}
+
+@media screen and (max-width:1366px){
+    h1.main-title{
+        font-size: 1.2rem;
+    }
+    .main-photos{
+        max-width: 65vw;
+     }
+
+}
+
 
 @media screen and (max-width:993px) {
     html,body{
@@ -47,5 +78,9 @@ h1{
     }
     .h-lg-100{
         height: auto !important;
+    }
+
+    .main-img{
+        max-width: 350px; margin-left: -50px;
     }
 }
