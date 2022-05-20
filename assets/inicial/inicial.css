@@ -31,8 +31,8 @@ h1{
     box-shadow: 0 4px 0 0 rgba(0, 0, 0, .15);
     width: 100%;
     text-align: center;
-    font-size: .8rem;
-    min-height: 60px;
+    font-size: 1.1rem;
+    min-height: 80px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -62,7 +62,7 @@ h1{
 }
 
 .barra-titulos{
-    margin-top: 2rem;
+    margin-top: 2.5rem;
     margin-bottom: 1.5rem;
 }
 
@@ -71,12 +71,17 @@ h1{
         font-size: 1.2rem;
     }
     .main-photos{
-        max-width: 65vw;
+        max-width: 53vw;
      }
 
      .barra-titulos{
-        margin-top: 1rem;
+        margin-top: .5rem;
         margin-bottom: 1rem;
+    }
+
+    .menu-links .btn-inicial{
+        font-size: 1rem;
+        min-height: 75px;
     }
 
 }
@@ -93,4 +98,11 @@ h1{
     .main-img{
         max-width: 350px; margin-left: -50px;
     }
+}
+
+
+@media screen and (max-width:993px) {
+    .main-photos{
+        max-width: 100%;
+     }
 }
