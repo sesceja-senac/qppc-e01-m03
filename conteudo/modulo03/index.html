@@ -1080,14 +1080,15 @@
 
 
                 <!--bloco pg02 03-->
-                <div class="position-relative">
+                <div class="position-relative" aria-hidden="true">
                     <div class="rellax parallax-esquerda no-print" data-rellax-speed="5" data-rellax-zindex="10" aria-hidden="true">
                         <img src="assets/img/textura_parallax_1.png">
                     </div>
-                    <div class="rellax parallax-direita top50 no-print" data-rellax-speed="5" data-rellax-zindex="10">
+                    <div class="rellax parallax-direita top50 no-print" data-rellax-speed="5" data-rellax-zindex="10" aria-hidden="true">
                         <img src="assets/img/textura_parallax_2.png">
                     </div>                 
                 </div>
+
                 <div class="container pt-4">
 
                     <p>Certos atributos intangíveis de bens materiais contribuíram para a satisfação de necessidades como a construção da identidade, o sentido de pertencimento e a aspiração a <em>status</em>. Carros, roupas, joias, acessórios, tanto quanto viagens, restaurantes e outros “consumos de experiência” ocupam espaço na construção de um estilo de vida associado a uma nova fase da civilização (CORAZZA, 2013).</p>
@@ -1127,10 +1128,10 @@
                     </div>
                 </div>
 
-                <div style="position: relative">
+                <div style="position: relative" aria-hidden="true">
                     <img src="../../assets/img/vetor-bg2.png" class="rellax detalhe5 no-print" data-rellax-speed="3" data-rellax-zindex="10" alt="">
                 </div>
-                <div style="position: relative">
+                <div style="position: relative" aria-hidden="true">
                     <img src="../../assets/img/vetor-bg33.png" class="rellax detalhe3 no-print" data-rellax-speed="3" data-rellax-zindex="10" alt="">
                 </div>
 
@@ -1659,7 +1660,7 @@
 
                     <p><strong>Clique</strong> ou <strong>Toque</strong> para ampliar a imagem.</p>
                     <figure  data-aos="zoom-in">
-                        <a href="assets/figuras/figura08.png" target="_blank"><img src="assets/figuras/figura08.png" alt="" class="img-fluid d-block mx-auto my-4"></a>
+                        <a href="./assets/img/infografico02_ampli.jpg" target="_blank"><img src="assets/figuras/figura08.png" alt="" class="img-fluid d-block mx-auto my-4"></a>
                         <figcaption>Figura 8 – Infográfico Sebrae Nordeste – 2020
                             <br aria-hidden="true">Fonte: Impacta Nordeste (2022)</figcaption>
                     </figure>
@@ -1688,32 +1689,13 @@
 
                         <p class=" no-print" aria-hidden="true"><strong>Clique</strong> ou <strong>toque</strong> nas imagens e nas setas para visualizar o conteúdo</p>
 
-                        <div id="carousel-pg02-bloco10" data-aos="fade-up" class="carousel slide sesc" data-bs-ride="carousel" aria-hidden="false">
-                            <div class="carousel-inner" role="listbox">
-                                <div class="carousel-item active">
-                                    <a href="assets/figuras/figura09_01.png" target="_blank"><img src="assets/figuras/figura09_01.png" alt="" class="img-fluid d-block mx-auto my-4"></a>
-                                </div>
-                                <div class="carousel-item">
-                                    <a href="assets/figuras/figura09_02.png" target="_blank"><img src="assets/figuras/figura09_02.png" alt="" class="img-fluid d-block mx-auto my-4"></a>
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-pg02-bloco10" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carousel-pg02-bloco10" data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
-                            <ol class="carousel-indicators">
-                                <li data-bs-target="#carousel-pg02-bloco10" data-bs-slide-to="0" class="active"></li>
-                                <li data-bs-target="#carousel-pg02-bloco10" data-bs-slide-to="1"></li>                                
-                            </ol>
+                        <div style="text-align: center;">
+                            <a href="./assets/img/infografico01_ampli.jpg" target="_blank"><img style="width: 600px;max-width: 100%;" src="./assets/img/infografico01_ampli.jpg" alt=""></a>
                         </div>
 
-                        <p class="legenda text-center"><p>Figura 9 – Indústrias Criativas em números – 2018 Fonte: Federação das Indústrias do Estado do Rio de Janeiro <em>apud</em><br>G1 (2018)</p></p>
+                        <p class="legenda text-center">Figura 9 – Indústrias Criativas em números – 2018 <br> Fonte: Federação das Indústrias do Estado do Rio de Janeiro <em>apud</em><br>G1 (2018)</p>
 
-                        <p class="sr-only">O slideshow mostra um infográfico com dados sobre a economia criativa no Brasil, entre os quais estão: 800 mil pessoas empregadas no setor criativo; 2,64 da participação da economia criativa no PIB brasileiro; média salarial de R$ 6.270; impacto na economia de R$ 39,7 milhões; cada R$ 1 investido tem retorno à sociedade de R$ 9,93.</p>
+                        <p class="sr-only" style="text-align: center;">O slideshow mostra um infográfico com dados sobre a economia criativa no Brasil, entre os quais estão: 800 mil pessoas empregadas no setor criativo; 2,64 da participação da economia criativa no PIB brasileiro; média salarial de R$ 6.270; impacto na economia de R$ 39,7 milhões; cada R$ 1 investido tem retorno à sociedade de R$ 9,93.</p>
                     </div>
                 </div>
 
@@ -1823,9 +1805,13 @@
                     <div class="container">
                         <p>Esses resultados foram divulgados na Agência Brasil em janeiro de 2022 pelo Instituto de Pesquisa Econômica Aplicada (IPEA), utilizando informações da Pesquisa Nacional de Amostragem de Domicílios (PNAD) e informações e indicadores do Instituto Brasileiro de Geografia e Estatística (IBGE).  </p>
                         <div class="row" data-aos="fade-left">
-                            <div class="col-12"><img src="assets/img/carta_ipea.png" class="img-fluid  mt-3 mb-3" alt=""></div>
+
                             <div class="col-12">
-                                <p class="text-white">A <em>Carta de Conjuntura</em> do IPEA, de 2022, citada no quadro anterior, aponta que a pandemia interferiu tanto na demanda quanto na oferta de trabalhos culturais, pois a retração devido ao distanciamento fez da cultura um dos setores mais afetados.</p>
+                                
+                                <div class="caixa icone">
+                                    <img src="assets/img/carta_ipea.png" class="img-fluid  mt-3 mb-3" alt="">
+                                    <p>A <em>Carta de Conjuntura</em> do IPEA, de 2022, citada no quadro anterior, aponta que a pandemia interferiu tanto na demanda quanto na oferta de trabalhos culturais, pois a retração devido ao distanciamento fez da cultura um dos setores mais afetados.</p>
+                                </div>
                             </div>                            
                         </div>
                         <p>Como visto no quadro, há uma queda vertiginosa da força de trabalho cultural. O estudo aponta que a retomada está diretamente ligada à criação, no final de 2020, do auxílio emergencial para a cultura, a Lei Aldir Blanc. Essa lei auxiliou a retomada do setor cultural e possibilitou que muitos fazedores de cultura tivessem algum recurso neste momento difícil. O próximo módulo abordará mais profundamente a leis e os fomentos, mas, por agora, você pode pesquisar mais sobre a Aldir Blanc no <em>site</em> da secretaria da cultura da sua cidade ou em portais de notícias, pois essa lei foi amplamente divulgada.</p>

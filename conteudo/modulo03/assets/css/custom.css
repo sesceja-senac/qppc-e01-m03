@@ -450,6 +450,10 @@ Flip card
     background-image: url(../img/icone_importante.png);
 }
 
+.icone.carta::before{
+    background-image: url(../img/icone_carta.png);
+}
+
 
 /*classes para o parallax*/
 .parallax-esquerda, .parallax-direita{

@@ -222,13 +222,15 @@ p{
     padding: 30px;
 }
 
+
+
 .caixa.icone{
     padding: 40px;
     padding-left: 60px;
     position: relative;
     margin-left: 20px; 
     margin-top: 60px;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
     color: #00838D;  
 }
 
@@ -767,41 +769,49 @@ h3, .subtitulo{
     position: absolute;
     top: 220px;
     left: 0px;
+    pointer-events: none;
   }
 
 .detalhe2 {
     position: absolute;
     right: 0px;
+    pointer-events: none;
   }
 .detalhe3 {
     position: absolute;
     top: -20px;
     left: 0px;
+    pointer-events: none;
   }
 .detalhe4 {
     position: absolute;
     top: -20px;
     left: 0px;
+    pointer-events: none;
   }
 .detalhe5 {
     position: absolute;
     top: 500px;
     right: 0px;
+    pointer-events: none;
   }
 .detalhe6 {
     position: absolute;
     top: 700px;
     left: 0px;
+    pointer-events: none;
   }
 .detalhe7 {
     position: absolute;
     top: 100px;
     left: 0px;
+    pointer-events: none;
   }
 .detalhe8 {
     position: absolute;
     top: 420px;
     right: 0px;
+    pointer-events: none;
   }
 /*iphones 5 pra baixo da vida*/
 @media screen and (max-width:320px) {
